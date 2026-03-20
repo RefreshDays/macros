@@ -1,0 +1,18 @@
+
+# --- IEUM Platform Custom Security ---
+# 기획서 5번 항목: API 키 및 환경 변수 보호
+.env
+*.env
+secrets.env
+
+# 기획서 3.E/8번 항목: 증빙용 감사 로그
+# *.log가 이미 위쪽에 있어 차단되지만, 특정 로그 파일명을 명시하여 확실히 보호합니다.
+ieum_audit.log
+
+# 앱 배포용 키스토어 및 자격 증명 (나중을 위해 미리 추가)
+*.jks
+*.keystore
+*.p12
+*.key
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_export_environment.sh
